@@ -1,0 +1,114 @@
+
+h1{
+    color: white;
+    text-align: center;
+}
+h5{
+    font-size: 100%;
+}
+body{
+   margin: 0;
+   padding: 0;
+}
+.tout{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+}
+.tete, .corps, .pied {
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.tete {
+    background-color: black;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.corps{
+    content: '';
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 60%;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+    color: white;
+}
+.corps::before{
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-image: url(image/anupam-mahapatra-Vz0RbclzG_w-unsplash.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center center;
+filter: blur(4px);
+z-index: -1;
+}
+.corps::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.pied {
+    background-color:black;
+    flex: 1;
+    padding: 20px;
+}
+.pied input[type="text"] {
+    width: calc(42% - 20px);
+    height: 30px;
+    padding: 10px;
+}
+    button{
+        width: calc(44% - 20px);
+        height: 50px;
+    }
+.item {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    color: white;
+}
+.br{
+    background-color: red;
+}
+.home{
+    color: red;
+}
+.web{
+    font-size: 20px;
+}
+h2{
+    font-size: 30px;
+    color: white;
+}
+p{
+    font-size: 25px;
+    color: black;
+}
+.about{
+    color: red;
+}
+.s{
+    color: white;
+    font-size: 40px;
+}
